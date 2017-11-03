@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lilosoft.chablis.qkcredentials.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorBgNav"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="24dp"
+            android:drawableStart="@mipmap/menu"
+            android:text="@string/s_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/credentialsList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/left_right_margin"
+        android:layout_marginStart="@dimen/left_right_margin"
+        android:background="@drawable/group_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/tv_dsj"
+            style="@style/s_index_list_text"
+            android:drawableTop="@mipmap/dsj"
+            android:text="@string/s_dsj"
+            app:layout_constraintEnd_toStartOf="@+id/tv_fgj"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_fgj"
+            style="@style/s_index_list_text"
+            android:layout_toEndOf="@id/tv_dsj"
+            android:drawableTop="@mipmap/fgj"
+            android:text="@string/s_fgj"
+            app:layout_constraintEnd_toStartOf="@+id/tv_gaj"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_dsj"
+            app:layout_constraintTop_toTopOf="@id/tv_dsj" />
+
+        <TextView
+            android:id="@+id/tv_gaj"
+            style="@style/s_index_list_text"
+            android:layout_toEndOf="@id/tv_fgj"
+            android:drawableTop="@mipmap/gaj"
+            android:text="@string/s_gaj"
+            app:layout_constraintEnd_toStartOf="@+id/tv_gtghj"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_fgj" />
+
+        <TextView
+            android:id="@+id/tv_gtghj"
+            style="@style/s_index_list_text"
+            android:layout_toEndOf="@id/tv_gaj"
+            android:drawableTop="@mipmap/gtghj"
+            android:text="@string/s_gtghj"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_gaj" />
+
+        <!--第二排-->
+
+        <TextView
+            android:id="@+id/tv_wjw"
+            style="@style/s_index_list_text"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@mipmap/wjw"
+            android:text="@string/s_dsj"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_syj"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dsj" />
+
+
+        <TextView
+            android:id="@+id/tv_syj"
+            style="@style/s_index_list_text"
+            android:layout_toEndOf="@id/tv_dsj"
+            android:drawableTop="@mipmap/syj"
+            android:text="@string/s_dsj"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_mzj"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_wjw"
+            app:layout_constraintTop_toTopOf="@id/tv_wjw" />
+
+        <TextView
+            android:id="@+id/tv_mzj"
+            style="@style/s_index_list_text"
+            android:layout_toEndOf="@id/tv_mzj"
+            android:drawableTop="@mipmap/gaj"
+            android:text="@string/s_dsj"
+            app:layout_constraintEnd_toStartOf="@+id/tv_more"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_syj"
+            app:layout_constraintTop_toTopOf="@id/tv_wjw" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            style="@style/s_index_list_text"
+            android:layout_toEndOf="@id/tv_gaj"
+            android:drawableTop="@mipmap/more"
+            android:text="@string/s_dsj"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_mzj"
+            app:layout_constraintTop_toTopOf="@id/tv_wjw" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/iv_center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/left_right_margin"
+        android:layout_marginStart="@dimen/left_right_margin"
+        android:background="@drawable/group_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credentialsList" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/credentialsList_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/left_right_margin"
+        android:layout_marginStart="@dimen/left_right_margin"
+        android:background="@drawable/group_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_center">
+
+        <TextView
+            android:id="@+id/dep_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/ic_card_membership_24px"
+            android:text="@string/s_syj"
+            android:textColor="@color/colorBgNav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/card_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/ic_inbox_24px"
+            android:text="@string/s_card_type"
+            android:textColor="@color/colorBgNav"
+            app:layout_constraintTop_toBottomOf="@id/dep_title" />
+
+        <TextView
+            android:id="@+id/tvCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="食品经营许可证"
+            android:textColor="@color/colorLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iv_triangle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_type_title" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCard" />
+
+        <ImageView
+            android:id="@+id/iv_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/triangle"
+            app:layout_constraintBottom_toBottomOf="@id/tvCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvCard" />
+
+        <TextView
+            android:id="@+id/card_no_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/ic_receipt_24px"
+            android:text="@string/s_card_no"
+            android:textColor="@color/colorRedTitle"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <EditText
+            android:id="@+id/et_card_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:hint="@string/s_hint_card_no"
+            android:singleLine="true"
+            android:textColor="@color/c_sansansan"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/colorLine"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_no_title" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_card_no" />
+
+        <TextView
+            android:id="@+id/card_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/ic_chrome_reader_mode_24px"
+            android:text="@string/s_card_name"
+            android:textColor="@color/c_grean_title"
+            app:layout_constraintTop_toBottomOf="@id/line2" />
+
+        <EditText
+            android:id="@+id/et_card_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:hint="@string/s_hint_card_name"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/c_sansansan"
+            android:textColorHint="@color/colorLine"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_name_title" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_card_name" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/d_blue_button"
+        android:text="验证"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_search"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/credentialsList_bottom" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/d_blue_button"
+        android:text="查询"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_check"
+        app:layout_constraintTop_toBottomOf="@id/credentialsList_bottom" />
+</android.support.constraint.ConstraintLayout>
+

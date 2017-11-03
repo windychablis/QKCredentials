@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">QKCredentials</string>
+    <string name="s_title">证照对比</string>
+    <string name="s_dsj">地税局</string>
+    <string name="s_fgj">房管局</string>
+    <string name="s_gaj">公安局</string>
+    <string name="s_gtghj">国土规划局</string>
+    <string name="s_wjw">卫计委</string>
+    <string name="s_syj">食药监</string>
+    <string name="s_mzj">民政局</string>
+    <string name="s_more">更多</string>
+    <string name="s_card_type">证件类型</string>
+    <string name="s_card_no">证件编号</string>
+    <string name="s_card_name">证件姓名</string>
+    <string name="s_credential_detail">证照详情</string>
+    <string name="s_hint_card_name">请输入您的证件姓名</string>
+    <string name="s_hint_card_no">请输入您的证件编号</string>
+</resources>

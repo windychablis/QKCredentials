@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#1c83d4</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBgNav">#2196f3</color>
+    <color name="colorLine">#e0e0e0</color>
+    <color name="colorRedTitle">#ed540c</color>
+    <color name="c_sansansan">#333</color>
+    <color name="c_grean_title">#1ead23</color>
+
+</resources>
